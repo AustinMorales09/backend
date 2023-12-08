@@ -18,9 +18,9 @@ app.use((req, res, next) => {
 app.get('/', (req,res)=>{
   res.setHeader("Access-Control-Allow-Credentials","true");
 })
+// comment
 // routes
 app.use("/attractions", attractionRoutes)
-
 // connect to DB
 mongoose.connect(process.env.MONGO_URI)
  .then(() => {
